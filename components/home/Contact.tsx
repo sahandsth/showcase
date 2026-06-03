@@ -1,77 +1,58 @@
+import styles from './Contact.module.css';
+
 export default function Contact() {
     return (
-        <section id="contact" className="py-32 px-6 max-w-5xl mx-auto">
-
-            <div className="mb-16 text-center">
-                <p className="text-zinc-500 uppercase tracking-[0.3em] text-sm">
-                    Contact
-                </p>
-
-                <h2 className="text-4xl md:text-5xl font-bold mt-4">
-                    Let’s Work Together
-                </h2>
-
-                <p className="text-zinc-400 mt-6">
-                    I’m available for frontend and full-stack opportunities.
-                </p>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-
-                {/* Email / Direct */}
-                <div className="p-8 rounded-2xl border border-zinc-800">
-                    <h3 className="text-xl font-semibold mb-4">
-                        Get in touch
-                    </h3>
-
-                    <p className="text-zinc-400 mb-6 leading-relaxed">
-                        The fastest way to reach me is via email. I usually respond within 24 hours.
+        <section id="contact" className={styles.contact}>
+            <div className={styles.container}>
+                <div className={styles.header}>
+                    <span>Contact</span>
+                    <h2>Get In Touch</h2>
+                    <p>
+                        Whether you have a project, a job opportunity, or just
+                        want to connect, feel free to reach out.
                     </p>
+                </div>
+
+                <div className={styles.grid}>
+                    <a
+                        href="mailto:your@email.com"
+                        className={styles.card}
+                    >
+                        <h3>Email</h3>
+                        <p>your@email.com</p>
+                    </a>
 
                     <a
-                        href="mailto:sahandsotoudeh99@gmail.com"
-                        className="inline-block px-6 py-3 rounded-xl bg-white text-black font-medium hover:scale-105 transition"
+                        href="https://github.com/yourusername"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.card}
                     >
-                        Send Email
+                        <h3>GitHub</h3>
+                        <p>github.com/yourusername</p>
+                    </a>
+
+                    <a
+                        href="https://linkedin.com/in/yourusername"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.card}
+                    >
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/yourusername</p>
+                    </a>
+
+                    <a
+                        href="/cv/SahandSetoudeh-CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.card}
+                    >
+                        <h3>Resume</h3>
+                        <p>Download CV</p>
                     </a>
                 </div>
-
-                {/* Socials */}
-                <div className="p-8 rounded-2xl border border-zinc-800">
-                    <h3 className="text-xl font-semibold mb-4">
-                        Social Links
-                    </h3>
-
-                    <div className="space-y-4 text-zinc-400">
-
-                        <a
-                            href="https://github.com/sahandsth"
-                            target="_blank"
-                            className="block hover:text-white transition"
-                        >
-                            GitHub →
-                        </a>
-
-                        <a
-                            href="https://linkedin.com/in/sahandsth"
-                            target="_blank"
-                            className="block hover:text-white transition"
-                        >
-                            LinkedIn →
-                        </a>
-
-                        <a
-                            href="/cv/SahandSetoudeh-CV.pdf"
-                            className="block hover:text-white transition"
-                        >
-                            Resume Download →
-                        </a>
-
-                    </div>
-                </div>
-
             </div>
-
         </section>
     );
 }

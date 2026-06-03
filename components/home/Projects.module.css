@@ -1,0 +1,132 @@
+.section {
+    padding: 8rem 2rem;
+    background: #0b0b0b;
+    color: white;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.header span {
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    font-size: 0.8rem;
+}
+
+.header h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-top: 0.5rem;
+}
+
+.header p {
+    max-width: 600px;
+    margin: 1rem auto 0;
+    color: #9ca3af;
+    line-height: 1.7;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.8rem;
+}
+
+/* CARD */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-decoration: none;
+    color: white;
+
+    background: linear-gradient(145deg, #151515, #101010);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 18px;
+    padding: 1.8rem;
+
+    transition: all 0.25s ease;
+    min-height: 260px;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* TOP */
+.topBar {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+}
+
+.role {
+    font-size: 0.75rem;
+    color: #aaa;
+
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 999px;
+}
+
+/* CONTENT */
+.content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+}
+
+.content p {
+    color: #b0b0b0;
+    line-height: 1.7;
+    font-size: 0.95rem;
+}
+
+/* TECH */
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
+}
+
+.tech span {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.06);
+    color: #ddd;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 6rem 1.5rem;
+    }
+
+    .card {
+        min-height: auto;
+    }
+}

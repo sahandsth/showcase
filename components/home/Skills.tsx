@@ -1,66 +1,81 @@
+import styles from './Skills.module.css';
+
+const skillGroups = [
+    {
+        title: 'Frontend',
+        skills: [
+            'Next.js',
+            'React',
+            'TypeScript',
+            'JavaScript',
+            'HTML5',
+            'CSS3',
+        ],
+    },
+    {
+        title: 'Backend',
+        skills: [
+            'Laravel',
+            'PHP',
+            'REST APIs',
+            'Authentication',
+            'RBAC',
+            'MySQL',
+        ],
+    },
+    {
+        title: 'Tools',
+        skills: [
+            'Git',
+            'GitHub',
+            'VS Code',
+            'Postman',
+            'Vercel',
+            'Linux',
+        ],
+    },
+    {
+        title: 'Other',
+        skills: [
+            'UI/UX',
+            'WordPress',
+            'Elementor',
+            'Responsive Design',
+            'SEO Basics',
+            'Video Editing',
+        ],
+    },
+];
+
 export default function Skills() {
     return (
-        <section id="skills" className="py-32 px-6 max-w-6xl mx-auto">
+        <section id="skills" className={styles.skills}>
+            <div className={styles.container}>
+                <div className={styles.header}>
+                    <span>Skills</span>
+                    <h2>Technologies & Tools</h2>
+                    <p>
+                        Technologies and tools I use to build modern web
+                        applications and digital experiences.
+                    </p>
+                </div>
 
-            <div className="mb-16">
-                <p className="text-zinc-500 uppercase tracking-[0.3em] text-sm">
-                    Skills
-                </p>
+                <div className={styles.grid}>
+                    {skillGroups.map((group) => (
+                        <div key={group.title} className={styles.card}>
+                            <h3>{group.title}</h3>
 
-                <h2 className="text-4xl md:text-5xl font-bold mt-4">
-                    Technologies I Work With
-                </h2>
+                            <div className={styles.tags}>
+                                {group.skills.map((skill) => (
+                                    <span key={skill} className={styles.tag}>
+                                        {skill}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-
-            <div className="grid md:grid-cols-3 gap-8">
-
-                {/* Frontend */}
-                <div className="p-8 rounded-2xl border border-zinc-800">
-                    <h3 className="text-xl font-semibold mb-6">
-                        Frontend
-                    </h3>
-
-                    <ul className="space-y-3 text-zinc-300">
-                        <li>React</li>
-                        <li>Next.js</li>
-                        <li>JavaScript (ES6+)</li>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Blade (Laravel)</li>
-                    </ul>
-                </div>
-
-                {/* Backend */}
-                <div className="p-8 rounded-2xl border border-zinc-800">
-                    <h3 className="text-xl font-semibold mb-6">
-                        Backend
-                    </h3>
-
-                    <ul className="space-y-3 text-zinc-300">
-                        <li>Laravel</li>
-                        <li>PHP</li>
-                        <li>REST APIs</li>
-                        <li>MySQL</li>
-                    </ul>
-                </div>
-
-                {/* Tools */}
-                <div className="p-8 rounded-2xl border border-zinc-800">
-                    <h3 className="text-xl font-semibold mb-6">
-                        Tools & Others
-                    </h3>
-
-                    <ul className="space-y-3 text-zinc-300">
-                        <li>Git / GitHub</li>
-                        <li>Figma</li>
-                        <li>Photoshop</li>
-                        <li>DaVinci Resolve</li>
-                        <li>UI/UX Design</li>
-                    </ul>
-                </div>
-
-            </div>
-
         </section>
     );
 }

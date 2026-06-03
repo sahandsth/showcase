@@ -1,89 +1,69 @@
-import Link from "next/link";
+import Link from 'next/link';
+import styles from './Projects.module.css';
+
+const projects = [
+    {
+        slug: 'form',
+        title: 'Form Café & Gym Menu',
+        description:
+            'A modern digital menu system designed for cafés and gyms. Focused on smooth UX, fast navigation, and clean presentation of items.',
+        tech: ['Next.js', 'TypeScript', 'CSS Modules'],
+        role: 'Full Stack',
+    },
+    {
+        slug: 'luisant',
+        title: 'Luisant Showcase Website',
+        description:
+            'A multilingual product showcase website for Luisant with structured content, responsive design, and clean UI.',
+        tech: ['Laravel', 'Blade', 'MySQL', 'PHP'],
+        role: 'Backend + Frontend',
+    },
+];
 
 export default function Projects() {
     return (
-        <section
-            id="projects"
-            className="max-w-7xl mx-auto px-6 py-32"
-        >
-            <div className="mb-16">
-        <span className="text-zinc-500 uppercase tracking-[0.3em] text-sm">
-          Portfolio
-        </span>
-
-                <h2 className="text-4xl md:text-5xl font-bold mt-4">
-                    Featured Projects
-                </h2>
-            </div>
-
-            <div className="grid md:grid-cols-2 gap-8">
-
-                <Link
-                    href="/projects/luisant"
-                    className="group border border-zinc-800 rounded-3xl p-8 hover:border-zinc-600 transition"
-                >
-                    <h3 className="text-3xl font-semibold mb-4">
-                        Luisant
-                    </h3>
-
-                    <p className="text-zinc-400 leading-relaxed mb-8">
-                        Corporate multilingual website developed with Laravel,
-                        featuring English, French and Arabic support.
+        <section id="projects" className={styles.section}>
+            <div className={styles.container}>
+                <div className={styles.header}>
+                    <span>Projects</span>
+                    <h2>Selected Work</h2>
+                    <p>
+                        A few real-world projects I’ve built focusing on
+                        usability, performance, and clean architecture.
                     </p>
+                </div>
 
-                    <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 border border-zinc-700 rounded-full text-sm">
-              Laravel
-            </span>
+                <div className={styles.grid}>
+                    {projects.map((project) => (
+                        <Link
+                            key={project.slug}
+                            href={`/projects/${project.slug}`}
+                            className={styles.card}
+                        >
+                            <div className={styles.topBar}>
+                                <span className={styles.role}>
+                                    {project.role}
+                                </span>
+                            </div>
 
-                        <span className="px-3 py-1 border border-zinc-700 rounded-full text-sm">
-              Blade
-            </span>
+                            <div className={styles.content}>
+                                <h3>{project.title}</h3>
 
-                        <span className="px-3 py-1 border border-zinc-700 rounded-full text-sm">
-              MySQL
-            </span>
-                    </div>
+                                <p>{project.description}</p>
 
-                    <span className="inline-flex items-center gap-2">
-            Open Showcase
-            <span className="group-hover:translate-x-1 transition">
-              →
-            </span>
-          </span>
-                </Link>
+                                <div className={styles.tech}>
+                                    {project.tech.map((t) => (
+                                        <span key={t}>{t}</span>
+                                    ))}
+                                </div>
+                            </div>
 
-                <Link
-                    href="/projects/form"
-                    className="group border border-zinc-800 rounded-3xl p-8 hover:border-zinc-600 transition"
-                >
-                    <h3 className="text-3xl font-semibold mb-4">
-                        Form
-                    </h3>
-
-                    <p className="text-zinc-400 leading-relaxed mb-8">
-                        Portfolio and content showcase project focused on visual
-                        presentation and media production.
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mb-8">
-            <span className="px-3 py-1 border border-zinc-700 rounded-full text-sm">
-              Editing
-            </span>
-
-                        <span className="px-3 py-1 border border-zinc-700 rounded-full text-sm">
-              Motion Design
-            </span>
-                    </div>
-
-                    <span className="inline-flex items-center gap-2">
-            Open Showcase
-            <span className="group-hover:translate-x-1 transition">
-              →
-            </span>
-          </span>
-                </Link>
-
+                            <div className={styles.footer}>
+                                View Case Study →
+                            </div>
+                        </Link>
+                    ))}
+                </div>
             </div>
         </section>
     );

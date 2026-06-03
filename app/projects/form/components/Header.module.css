@@ -1,0 +1,132 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 14px 20px;
+    background: #111;
+    color: #fff;
+    border-bottom: 1px solid #222;
+    position: relative;
+    z-index: 10;
+    direction: ltr;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.burgerLine, .burgerLineOpen {
+    width: 28px;
+    height: 3px;
+    background: #fff;
+    margin: 4px 0;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+/* حالت باز منو (می‌توانید انیمیشن اضافه کنید) */
+.burgerLineOpen:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+.burgerLineOpen:nth-child(2) {
+    opacity: 0;
+}
+.burgerLineOpen:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.nav {
+    display: flex;
+}
+
+.navList {
+    display: flex;
+    gap: 1.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: right;
+    width: auto;
+    direction: rtl;
+}
+
+.navList li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.navList li a:hover {
+    background: #fff;
+    color: #111;
+}
+
+@media (max-width: 800px) {
+    .burger {
+        display: flex;
+    }
+    .nav {
+        display: none;
+    }
+    .navOpen {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100vw;
+        background: #111;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+        z-index: 15;
+        animation: fadeIn 0.2s;
+    }
+    .navList {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+        align-items: flex-end;
+        text-align: right;
+        direction: rtl;
+    }
+    .navList li {
+        width: 100%;
+        border-bottom: 1px solid #222;
+    }
+    .navList li a {
+        width: 100%;
+        display: block;
+        padding: 16px 24px;
+        font-size: 1.1rem;
+        border-radius: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

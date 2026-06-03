@@ -1,0 +1,98 @@
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 2rem;
+
+    background: #0a0a0a;
+    color: white;
+}
+
+.content {
+    max-width: 850px;
+    text-align: center;
+}
+
+.tag {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 999px;
+
+    color: #9ca3af;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+    color: #d4d4d4;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.description {
+    max-width: 650px;
+    margin: 0 auto;
+
+    color: #9ca3af;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.actions {
+    margin-top: 2.5rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.primaryBtn,
+.secondaryBtn {
+    text-decoration: none;
+    padding: 0.9rem 1.6rem;
+    border-radius: 999px;
+
+    transition: 0.25s ease;
+}
+
+.primaryBtn {
+    background: white;
+    color: black;
+    font-weight: 600;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-2px);
+}
+
+.secondaryBtn {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: white;
+}
+
+.secondaryBtn:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .description {
+        font-size: 1rem;
+    }
+}
