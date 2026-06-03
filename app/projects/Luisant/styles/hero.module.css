@@ -1,120 +1,298 @@
-/* =========================
-   HERO WRAPPER
-========================= */
+    /* =========================
+       HERO WRAPPER
+    ========================= */
 
-.topBanner {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
+    .topBanner {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
 
-.banner {
-    position: absolute;
-    inset: 0;
-    background: black;
-}
+    .banner {
+        position: absolute;
+        inset: 0;
+        background: black;
+    }
 
-.bannerMain {
-    background-color: #c0c0c0;
-    min-height: 700px;
-}
+    .bannerMain {
+        background-color: #c0c0c0;
+        min-height: 700px;
+    }
 
-/* optional wrapper */
-.topBannerGroup {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
+    /* optional wrapper */
+    .topBannerGroup {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
 
-/* =========================
-   RESET (Bootstrap kill inside hero)
-========================= */
+    /* =========================
+       RESET (Bootstrap kill inside hero)
+    ========================= */
 
-.topBanner * {
-    box-sizing: border-box;
-}
+    .topBanner * {
+        box-sizing: border-box;
+    }
 
-.topBanner h1,
-.topBanner p {
-    margin: 0 !important;
-    padding: 0;
-    font-weight: normal !important;
-}
+    .topBanner h1,
+    .topBanner p {
+        margin: 0 !important;
+        padding: 0;
+        font-weight: normal !important;
+    }
 
-/* =========================
-   IMAGE
-========================= */
+    /* =========================
+       IMAGE
+    ========================= */
 
-.bannerImg {
-    position: absolute;
-    bottom: -600px;
-    right: 0;
-    width: 1350px;
-    height: auto;
-    object-fit: cover;
-    z-index: 300;
-}
+    .bannerImg {
+        position: absolute;
+        bottom: -600px;
+        right: 0;
+        width: 1350px;
+        height: auto;
+        object-fit: cover;
+        z-index: 200;
+    }
 
-/* =========================
-   TEXTS
-========================= */
-
-#luisantText {
-    font-size: 175px;
-    font-family: 'Dubai' !important;
-    font-weight: 600 !important;
-    position: absolute;
-    bottom: 410px;
-    left: 50px;
-    color: white;
-    z-index: 200;
-}
-
-#shine {
-    font-family: Golden !important;
-    font-size: 80px;
-    position: absolute;
-    bottom: 340px;
-    left: 55px;
-    color: white;
-    z-index: 300;
-}
-
-#topBannerText {
-    font-family: InterRegular !important;
-    font-size: 18px;
-    position: absolute;
-    bottom: 250px;
-    left: 55px;
-    width: 470px;
-    line-height: 1.2;
-    color: white;
-    z-index: 270;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media screen and (min-width: 810px) and (max-width: 1000px) {
+    /* =========================
+       TEXTS
+    ========================= */
 
     #luisantText {
-        font-size: 145px;
-        bottom: 420px;
+        font-size: 175px;
+        font-family: 'Dubai' !important;
+        font-weight: 600 !important;
+        position: absolute;
+        bottom: 410px;
+        left: 50px;
+        color: white;
+        z-index: 150;
     }
 
     #shine {
-        font-size: 68px;
-        bottom: 360px;
+        font-family: Golden !important;
+        font-size: 80px;
+        position: absolute;
+        bottom: 340px;
+        left: 55px;
+        color: white;
+        z-index: 300;
     }
 
     #topBannerText {
-        font-size: 15px;
-        bottom: 310px;
+        font-family: InterRegular !important;
+        font-size: 18px;
+        position: absolute;
+        bottom: 250px;
+        left: 55px;
+        width: 470px;
+        line-height: 1.2;
+        color: white;
+        z-index: 270;
     }
 
-    .bannerImg {
-        width: 1250px;
+    /* =========================
+       RESPONSIVE
+    ========================= */
+    @media screen and (min-width: 1000px) and (max-width: 1300px) {
+        #luisantText {
+            font-size: 175px;
+            bottom: 410px;
+        }
+        #shine {
+            font-size: 80px;
+            bottom: 340px;
+        }
+        #topBannerText {
+            font-size: 18px;
+            bottom: 250px;
+        }
+        .bannerImg {
+            width: 1270px;
+        }
     }
-}
+    /* =========================
+       810px - 1000px
+    ========================= */
+    @media screen and (min-width: 810px) and (max-width: 1000px) {
+
+        #luisantText {
+            font-size: 145px;
+            bottom: 420px;
+        }
+
+        #shine {
+            font-size: 68px;
+            bottom: 360px;
+        }
+
+        #topBannerText {
+            font-size: 15px;
+            bottom: 310px;
+        }
+
+        .bannerImg {
+            width: 1250px;
+        }
+    }
+
+
+    /* =========================
+       <= 810px
+    ========================= */
+    @media screen and (max-width: 810px) {
+
+        #luisantText {
+            font-size: 130px;
+            bottom: 420px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #shine {
+            width: 100%;
+            font-size: 45px;
+            bottom: 370px;
+            left: 0;
+            text-align: center;
+        }
+
+        #topBannerText {
+            left: 0;
+            position: relative;
+            bottom: 0;
+            font-size: 15px;
+            text-align: left;
+        }
+        #topBannerTextSpan {
+            position: absolute;
+            bottom: 310px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bannerImg {
+            width: 1250px;
+        }
+    }
+
+
+    /* =========================
+       490px - 600px
+    ========================= */
+    @media screen and (min-width: 490px) and (max-width: 600px) {
+
+        #luisantText {
+            font-size: 115px;
+            bottom: 420px;
+        }
+
+        #shine {
+            width: 100%;
+            font-size: 40px;
+            bottom: 385px;
+        }
+        #topBannerTextSpan {
+            width: 430px;
+            position: absolute;
+            bottom: 330px;
+            display: flex;
+            justify-content: center;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 500;
+        }
+        #topBannerText {
+            font-size: 12px;
+        }
+
+        .bannerImg {
+            width: 1900px;
+            bottom: -1140px;
+            right: 20px;
+        }
+    }
+
+
+    /* =========================
+       <= 490px
+    ========================= */
+    @media screen and (max-width: 490px) {
+
+        #luisantText {
+            font-size: 100px;
+            top: 100px;
+            bottom: auto;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        #shine {
+            font-size: 35px;
+            top: 210px;
+            bottom: auto;
+            text-align: center;
+            width: 100%;
+        }
+        #topBannerTextSpan {
+            width: 370px;
+            position: absolute;
+            bottom: 0;
+            top: 260px;
+            display: flex;
+            justify-content: center;
+            left: 50%;
+            transform: translateX(-50%); /* Centers the span horizontally */
+            z-index: 500;
+        }
+        #topBannerText {
+            font-size: 11px;
+        }
+
+        .bannerImg {
+            width: 1670px;
+            top: 0;
+            bottom: auto;
+        }
+    }
+
+
+    /* =========================
+       <= 400px
+    ========================= */
+    @media screen and (max-width: 400px) {
+
+        #luisantText {
+            font-size: 90px;
+            top: 100px;
+        }
+
+        #shine {
+            font-size: 30px;
+            top: 210px;
+        }
+
+        #topBannerTextSpan {
+            width: 355px;
+            position: absolute;
+            bottom: 0;
+            top: 260px;
+            display: flex;
+            justify-content: center;
+            left: 50%;
+            transform: translateX(-50%); /* Centers the span horizontally */
+            z-index: 500;
+        }
+        #topBannerText {
+            font-size: 11px;
+        }
+
+        .bannerImg {
+            width: 1500px;
+            top: 50px;
+            right: 0;
+        }
+    }

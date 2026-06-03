@@ -16,10 +16,12 @@ export default function Hero() {
 
                 <h1 id={styles.shine}>THE SHINE YOU DESERVE</h1>
 
+                <span id={styles.topBannerTextSpan}>
                 <p id={styles.topBannerText}>
                     Luisant is more than just a collection of appliances; it's a philosophy of living.
                     We believe your home should be a sanctuary that reflects your style and inspires joy.
                 </p>
+                </span>
 
             </div>
 
