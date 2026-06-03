@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import './form.css';
+import BottomNavigation from "@/app/projects/form/components/BottomNavigation";
 
 export default function HomePage() {
     return (
@@ -78,7 +79,7 @@ export default function HomePage() {
             </Link>
 
             {/* Middle Section - Drinks */}
-            <Link href="/projects/form/drinks" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link  href='#' className="disabled-link" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <section style={{
                     backgroundColor: 'black',
                     height: '30vh',
@@ -121,7 +122,7 @@ export default function HomePage() {
             </Link>
 
             {/* Bottom Section - Nutrition */}
-            <Link href="/projects/form/nutrition" style={{ textDecoration: 'none', color: 'inherit' }}>
+            <Link href='#' className="disabled-link" style={{ textDecoration: 'none', color: 'inherit' }}>
                 <section style={{
                     backgroundColor: 'black',
                     height: '30vh',
@@ -162,6 +163,8 @@ export default function HomePage() {
                     <span className={'persian'}>موارد دیگر</span>
                 </section>
             </Link>
+
+            <BottomNavigation backgroundColor="#142224" />
         </main>
     )
 }
