@@ -9,7 +9,7 @@ export default function BottomNavigation({ backgroundColor = '#182A2C' }) {
                 bottom: '20px',
                 left: '50%',
                 transform: 'translateX(-50%)',
-                zIndex: 10
+                zIndex: 400
             }}>
                 {/* House icon with blurry background */}
                 <div style={{
