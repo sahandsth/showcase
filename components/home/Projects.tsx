@@ -11,7 +11,7 @@ const projects = [
         role: 'Full Stack',
     },
     {
-        slug: 'luisant',
+        slug: 'Luisant',
         title: 'Luisant Showcase Website',
         description:
             'A multilingual product showcase website for Luisant with structured content, responsive design, and clean UI.',

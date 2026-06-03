@@ -1,3 +1,28 @@
 body{
     margin: 0px;
+
 }
+
+
+@font-face {
+    font-family: "Golden";
+    src: url("/fonts/Golden.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dubai";
+    src: url("/fonts/Dubai.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "InterRegular";
+    src: url("/fonts/InterRegular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
