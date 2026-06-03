@@ -1,95 +1,105 @@
 /* =========================
-   CONTAINERS
+   HERO WRAPPER
 ========================= */
 
-.top-banner {
+.topBanner {
     position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .banner {
     position: absolute;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
+    inset: 0;
     background: black;
 }
 
-.banner_main {
-    background-color: #ffffff !important; /* طبق چیزی که گفتی */
+.bannerMain {
+    background-color: #c0c0c0;
     min-height: 700px;
 }
 
+/* optional wrapper */
+.topBannerGroup {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 /* =========================
-   BACKGROUND IMAGE
+   RESET (Bootstrap kill inside hero)
 ========================= */
 
-.banner-img {
+.topBanner * {
+    box-sizing: border-box;
+}
+
+.topBanner h1,
+.topBanner p {
+    margin: 0 !important;
+    padding: 0;
+    font-weight: normal !important;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.bannerImg {
     position: absolute;
     bottom: -600px;
     right: 0;
     width: 1350px;
     height: auto;
     object-fit: cover;
-    z-index: 200;
+    z-index: 300;
 }
 
 /* =========================
-   LUISANT TEXT
+   TEXTS
 ========================= */
 
-#luisant-text {
+#luisantText {
     font-size: 175px;
-    font-family: 'Dubai-regular' !important;
-    font-weight: 600;
+    font-family: 'Dubai' !important;
+    font-weight: 600 !important;
     position: absolute;
     bottom: 410px;
     left: 50px;
     color: white;
-    z-index: 300;
-    margin: 0;
+    z-index: 200;
 }
-
-/* =========================
-   SHINE TEXT
-========================= */
 
 #shine {
     font-family: Golden !important;
     font-size: 80px;
-    left: 55px;
     position: absolute;
     bottom: 340px;
+    left: 55px;
     color: white;
     z-index: 300;
-    margin: 0;
 }
 
-/* =========================
-   TOP PARAGRAPH
-========================= */
-
-#top-banner-text {
+#topBannerText {
     font-family: InterRegular !important;
     font-size: 18px;
-    left: 55px;
     position: absolute;
     bottom: 250px;
-    color: white;
-    z-index: 270;
+    left: 55px;
     width: 470px;
     line-height: 1.2;
-    margin: 0;
+    color: white;
+    z-index: 270;
 }
 
 /* =========================
-   RESPONSIVE (exact inspect)
+   RESPONSIVE
 ========================= */
 
 @media screen and (min-width: 810px) and (max-width: 1000px) {
 
-    #luisant-text {
+    #luisantText {
         font-size: 145px;
         bottom: 420px;
     }
@@ -99,22 +109,12 @@
         bottom: 360px;
     }
 
-    #top-banner-text {
+    #topBannerText {
         font-size: 15px;
         bottom: 310px;
     }
 
-    .banner-img {
+    .bannerImg {
         width: 1250px;
     }
-}
-
-/* =========================
-   GLOBAL RESET (important for Next)
-========================= */
-
-.banner,
-.top-banner,
-.banner_main {
-    box-sizing: border-box;
 }
