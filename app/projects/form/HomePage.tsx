@@ -5,7 +5,7 @@ import './form.css';
 
 export default function HomePage() {
     return (
-        <main style={{
+        <main className='FormPage' style={{
             display: 'flex',
             flexDirection: 'column',
             height: '100vh',

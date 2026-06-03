@@ -1,8 +1,6 @@
 @font-face {
-  font-family: 'Doran';
-  src: url('/fonts/Doran.woff2') format('woff2'),
-       url('/fonts/Doran.woff') format('woff'),
-       url('/fonts/Doran.ttf') format('truetype');
+    font-family: 'Doran';
+    src: url('/fonts/Doran.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,7 +16,8 @@
   overflow: hidden;
   margin: 0 auto;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: black
+  background: black;
+    direction: rtl;
 ;
 }
 
@@ -105,13 +104,14 @@
 /*card-texts*/
 .titleBox {
   background: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(2px) brightness(0.8);
+  backdrop-filter: blur(2px) brightness(0.8) !important;
   -webkit-backdrop-filter: blur(12px);
   border-radius: 10px;
   padding: 10px 5px;
 /* border: 1px solid rgba(255, 255, 255, 0.25);*/
   width: fit-content;
   max-width: 100%;
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 @media (max-width: 440px) {
@@ -161,6 +161,7 @@
  /* border: 1px solid rgba(255, 255, 255, 0.2);*/
   width: fit-content;
   max-width: 100%;
+    font-family: Doran, Tahoma, Arial, sans-serif;
 }
 
 @media (max-width: 440px) {
@@ -232,6 +233,7 @@
   gap: 8px;
   direction: ltr;
   min-width: 0;
+    font-family: Tahoma, Arial, sans-serif;
 }
 
 @media (max-width: 440px) {
