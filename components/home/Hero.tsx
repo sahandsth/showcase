@@ -17,9 +17,9 @@ export default function Hero() {
                 </h2>
 
                 <p className={styles.description}>
-                    I build modern web applications with Laravel,
-                    Next.js, TypeScript, and JavaScript. Passionate about
-                    creating fast, scalable, and user-focused digital experiences.
+                    I build digital products that solve real business problems.
+                    From powerful Laravel backends to modern Next.js interfaces,
+                    I transform concepts into scalable, production-ready applications.
                 </p>
 
                 <div className={styles.actions}>

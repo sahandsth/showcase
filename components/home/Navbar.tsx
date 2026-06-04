@@ -61,12 +61,6 @@ export default function Navbar() {
                         Projects
                     </a>
 
-                    <a
-                        href="#experience"
-                        onClick={(e) => scrollToSection(e, 'experience')}
-                    >
-                        Experience
-                    </a>
 
                     <a
                         href="#contact"

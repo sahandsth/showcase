@@ -15,31 +15,31 @@ export default function Contact() {
 
                 <div className={styles.grid}>
                     <a
-                        href="mailto:your@email.com"
+                        href="mailto:sahandsotoudeh99@gmail.com"
                         className={styles.card}
                     >
                         <h3>Email</h3>
-                        <p>your@email.com</p>
+                        <p>sahandsotoudeh99@gmail.com</p>
                     </a>
 
                     <a
-                        href="https://github.com/yourusername"
+                        href="https://github.com/sahandsth"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.card}
                     >
                         <h3>GitHub</h3>
-                        <p>github.com/yourusername</p>
+                        <p>github.com/sahandsth</p>
                     </a>
 
                     <a
-                        href="https://linkedin.com/in/yourusername"
+                        href="https://linkedin.com/in/sahandsth"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.card}
                     >
                         <h3>LinkedIn</h3>
-                        <p>linkedin.com/in/yourusername</p>
+                        <p>linkedin.com/in/sahandsth</p>
                     </a>
 
                     <a

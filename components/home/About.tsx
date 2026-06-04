@@ -15,39 +15,39 @@ export default function About() {
 
                 <div className={styles.right}>
                     <p>
-                        I'm Sahand Setoudeh, a Full Stack Web Developer
+                        I&#39;m Sahand Setoudeh, a Full Stack Web Developer
                         focused on creating scalable, responsive, and
                         user-friendly web applications.
                     </p>
 
                     <p>
-                        My primary stack includes Laravel, Next.js,
-                        TypeScript, PHP, MySQL, JavaScript, HTML, and CSS.
+                        My primary stack includes Laravel, Next.js, 
+                         PHP, MySQL, JavaScript, HTML, and CSS.
                         I enjoy turning ideas into production-ready products,
-                        whether it's a business platform, a product showcase,
+                        whether it&#39;s a business platform, a product showcase,
                         or a custom web application.
                     </p>
 
                     <p>
-                        Recently I've worked on projects such as Form,
+                        Recently I&#39;ve worked on projects such as Form,
                         a digital menu experience for a café and gym,
                         and Luisant, a multilingual product showcase website.
                     </p>
 
                     <div className={styles.stats}>
                         <div>
-                            <h3>2+</h3>
-                            <span>Major Projects</span>
+                            <h3>4+</h3>
+                            <span>Years EXP</span>
                         </div>
 
                         <div>
-                            <h3>5+</h3>
-                            <span>Technologies</span>
+                            <h3>6+</h3>
+                            <span>Projects</span>
                         </div>
 
                         <div>
-                            <h3>100%</h3>
-                            <span>Responsive Design</span>
+                            <h3>+3</h3>
+                            <span>Companies</span>
                         </div>
                     </div>
                 </div>

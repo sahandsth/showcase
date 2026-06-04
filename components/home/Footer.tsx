@@ -8,12 +8,11 @@ export default function Footer() {
             <div className={styles.container}>
                 <div className={styles.top}>
                     <h2 className={styles.title}>
-                        Let's Build Something Great
+                        Let&#39;s Build Something Great
                     </h2>
 
                     <p className={styles.description}>
-                        Available for freelance projects, web development,
-                        and full-stack opportunities.
+                        Available for full-time positions, contract work, and full-stack web development projects.
                     </p>
 
                     <div className={styles.links}>
@@ -53,7 +52,7 @@ export default function Footer() {
 
                 <div className={styles.bottom}>
                     <p>© {year} Sahand Setoudeh</p>
-                    <p>Laravel • Next.js • TypeScript</p>
+                    <p>Laravel • Next.js • Video Edit</p>
                 </div>
             </div>
         </footer>

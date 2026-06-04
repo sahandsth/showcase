@@ -6,7 +6,6 @@ const skillGroups = [
         skills: [
             'Next.js',
             'React',
-            'TypeScript',
             'JavaScript',
             'HTML5',
             'CSS3',
@@ -28,19 +27,17 @@ const skillGroups = [
         skills: [
             'Git',
             'GitHub',
-            'VS Code',
-            'Postman',
             'Vercel',
-            'Linux',
+            'Adobe Animate',
+            'Davinci Resolve'
         ],
     },
     {
         title: 'Other',
         skills: [
             'UI/UX',
-            'WordPress',
-            'Elementor',
             'Responsive Design',
+            'Animating',
             'SEO Basics',
             'Video Editing',
         ],

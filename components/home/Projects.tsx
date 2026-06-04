@@ -28,8 +28,8 @@ export default function Projects() {
                     <span>Projects</span>
                     <h2>Selected Work</h2>
                     <p>
-                        A few real-world projects I’ve built focusing on
-                        usability, performance, and clean architecture.
+                        A few real-world projects I’ve built focusing on usability, performance, and clean architecture.
+                        These are demo versions and not fully completed projects.
                     </p>
                 </div>
 
@@ -59,7 +59,7 @@ export default function Projects() {
                             </div>
 
                             <div className={styles.footer}>
-                                View Case Study →
+                                View Demo →
                             </div>
                         </Link>
                     ))}
