@@ -17,7 +17,7 @@ export default function Footer() {
 
                     <div className={styles.links}>
                         <a
-                            href="mailto:your@email.com"
+                            href="mailto:sahandsotoudeh99@gmail.com"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -25,7 +25,7 @@ export default function Footer() {
                         </a>
 
                         <a
-                            href="https://github.com/"
+                            href="https://github.com/sahandsth"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -33,7 +33,7 @@ export default function Footer() {
                         </a>
 
                         <a
-                            href="https://linkedin.com/"
+                            href="https://linkedin.com/in/sahandsth"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
