@@ -18,6 +18,14 @@ const projects = [
         tech: ['Laravel', 'Blade', 'MySQL', 'PHP'],
         role: 'Backend + Frontend',
     },
+    {
+        slug: 'healthy-nutrition-nutrition',
+        title: 'Healthy Nutrition',
+        description:
+            'Pixel-perfect frontend implementation of a nutrition platform based on a provided UI/UX design. Focused on responsive layouts, design accuracy, and clean component structure.',
+        tech: ['HTML', 'CSS', 'JavaScript'],
+        role: 'Frontend Development',
+    },
 ];
 
 export default function Projects() {

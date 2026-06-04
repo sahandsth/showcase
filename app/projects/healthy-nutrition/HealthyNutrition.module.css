@@ -1,0 +1,109 @@
+.page {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 120px 24px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 999px;
+    border: 1px solid #d7d7d7;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 7vw, 72px);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    color: #666;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+
+.stats div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.stats strong {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stats span {
+    color: #666;
+}
+
+.comparisons h2 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 42px;
+}
+
+.screenCard {
+    margin-bottom: 80px;
+}
+
+.screenCard h3 {
+    margin-bottom: 24px;
+    font-size: 28px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.imageBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.imageBlock span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.imageBlock img {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+}
+
+@media (max-width: 900px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
+
+    .screenCard {
+        margin-bottom: 60px;
+    }
+
+    .comparisons h2 {
+        font-size: 32px;
+    }
+}
