@@ -19,7 +19,7 @@ const projects = [
         role: 'Backend + Frontend',
     },
     {
-        slug: 'healthy-nutrition-nutrition',
+        slug: 'healthy-nutrition',
         title: 'Healthy Nutrition',
         description:
             'Pixel-perfect frontend implementation of a nutrition platform based on a provided UI/UX design. Focused on responsive layouts, design accuracy, and clean component structure.',
